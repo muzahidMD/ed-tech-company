@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "WEB Design",
+        "price": "300",
+        "mentor": "Sakib All Hasan",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/8gdNxpg/web-design.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WEB Development",
+        "price": "100",
+        "mentor": "Jhanker Mahbub",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/ss6WQx0/web-development.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Digital Marketing",
+        "price": "150",
+        "mentor": "Najmul Islam",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/1T96cBz/digital-marketing.png"
+    },
+    {
+        "id": 4,
+        "name": "Fiverr Crush Course",
+        "price": "180",
+        "mentor": "Misbahul Islam",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Ych8wcD/fiverr-course.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Affiliate Marketing",
+        "price": "100",
+        "mentor": "Yeasir Arafat",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/SwSmYY5/affiliate-marketing.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cyber Security Training",
+        "price": "300",
+        "mentor": "Najmus Sakib",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/F3pm3qZ/cyber-security-training.png"
+    }
+]

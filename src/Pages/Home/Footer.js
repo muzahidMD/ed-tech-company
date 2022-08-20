@@ -32,9 +32,9 @@ const Footer = () => {
                     <p>Copyright © 2022 - All right reserved</p>
                 </div>
                 <div className="grid-flow-col text-2xl gap-4 md:place-self-center md:justify-self-end">
-                    <Link to={'#'}><i class="fa-brands fa-youtube"></i></Link>
-                    <Link to={'#'}><i class="fa-brands fa-instagram"></i></Link>
-                    <Link to={'#'}><i class="fa-brands fa-facebook"></i></Link>
+                    <Link to={'#'}><i className="fa-brands fa-youtube"></i></Link>
+                    <Link to={'#'}><i className="fa-brands fa-instagram"></i></Link>
+                    <Link to={'#'}><i className="fa-brands fa-facebook"></i></Link>
                 </div>
             </div>
         </footer>
