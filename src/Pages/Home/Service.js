@@ -12,24 +12,25 @@ const Product = ({ service }) => {
     }
     return (
         <div className=''>
-            <Card className='card' style={{ width: '100%', border: '1px solid #00896F' }}>
+            <Card className='card' style={{ width: '100%', border: '1px solid #FF2E82' }}>
                 <Card.Img variant="top" src={img} />
-                <Card.Body>
-                    <Card.Title> <strong> <i>{name}</i> </strong> </Card.Title>
-                    <Card.Text>
-                        {description}
-                    </Card.Text>
-                    <Card.Text>
-                        <strong>Price:</strong> ${price}
-                        <div className='d-flex align-items-center justify-content-between'>
-                            <p><small><strong> Mentor:</strong> {mentor} </small></p>
+                <div className='py-5 px-2'>
+                    <Card.Body>
+                        <Card.Title><strong><i>{name}</i> </strong></Card.Title>
+                        <Card.Text>
+                            {description}
+                        </Card.Text>
+                        <Card.Text>
+                            <strong>Price:</strong> ${price}
+                            <div className='d-flex align-items-center justify-content-between'>
+                                <p><small><strong> Mentor:</strong> {mentor} </small></p>
+                            </div>
+                        </Card.Text>
+                        <div className='d-flex justify-content-center'>
+                            <button className='btn-primary px-5 py-1 mt-3 rounded-md' onClick={() => navigateToProductDetail(id)}>Details</button>
                         </div>
-                    </Card.Text>
-                    <div className='d-flex justify-content-center'>
-                        <button className='button' onClick={() => navigateToProductDetail(id)}>Details</button>
-                    </div>
-
-                </Card.Body>
+                    </Card.Body>
+                </div>
             </Card>
         </div>
     );
