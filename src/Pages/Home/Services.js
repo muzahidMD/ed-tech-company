@@ -3,7 +3,7 @@ import './Services.css'
 import Service from '../Home/Service';
 import useServices from '../../Hooks/useServices';
 
-const Products = () => {
+const Services = () => {
     const [services, setServices] = useServices();
 
     return (
@@ -24,4 +24,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default Services;

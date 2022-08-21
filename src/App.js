@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Navbar from './Pages/shared/Navbar';
 import ServiceDetail from './Pages/Home/ServiceDetail';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
-        <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
+        <Route path='/service/:serviceId' element={
+          <RequireAuth>
+            <ServiceDetail />
+          </RequireAuth>
+        }></Route>
       </Routes>
     </div>
   );

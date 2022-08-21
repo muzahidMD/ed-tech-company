@@ -17,7 +17,7 @@ const ServiceDetails = () => {
     return (
         <div>
             <h2 className='text-center text-3xl text-primary font-bold italic my-10 '> Service Details</h2>
-            <Card className='mx-auto' style={{ width: '25%', border: '1px solid #00896F' }}>
+            <Card className='mx-auto lg:w-[25%]' style={{ border: '1px solid #FF2E82' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title> <strong> <i>{name}</i> </strong> </Card.Title>
