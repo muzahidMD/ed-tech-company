@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Misbahul Islam",
+        "descri": "He is a perfect Digital Marketer in our ED-Tech",
+        "img": "https://i.ibb.co/WydbNzh/Digital-Markerter.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Yeasir Arafat",
+        "descri": "Web Developer in owr ED-Tech. Bets person in our world",
+        "img": "https://i.ibb.co/VCznqhp/Web-Developer.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Sakib All Hasan",
+        "descri": "He is a special person of Graphic Designing in owr ED-Tech",
+        "img": "https://i.ibb.co/GHCJ4vZ/Graphic-Designer.jpg"
+    }
+]

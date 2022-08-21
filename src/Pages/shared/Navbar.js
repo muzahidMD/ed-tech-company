@@ -12,9 +12,9 @@ const Navbar = () => {
     };
 
     const menuItems = <>
-        <li><Link className='btn bg-white text-black hover:bg-primary hover:text-white border-none' to={'/'}>Home</Link></li>
-        <li><Link className='btn bg-white text-black hover:bg-primary hover:text-white border-none' to={'/#services'}>Services</Link></li>
-        <li><Link className='btn bg-white text-black hover:bg-primary hover:text-white border-none' to={'/portfolio'}>Portfolio</Link></li>
+        <li><Link className='btn bg-white text-black hover:bg-primary hover:text-white border-none' to={'/home'}>Home</Link></li>
+        <li><a className='btn bg-white text-black hover:bg-primary hover:text-white border-none' href="#services" >Services</a></li>
+        <li><a className='btn bg-white text-black hover:bg-primary hover:text-white border-none' href='#trainer' >Trainer</a></li>
 
         <li>{user ? <button onClick={logout} className="btn bg-white text-black hover:bg-primary hover:text-white rounded-full">Sign out</button> : <Link to={'/login'} className="btn bg-white text-black hover:bg-primary hover:text-white rounded-full" >Login</Link>}</li>
     </>
@@ -30,17 +30,15 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost normal-case text-xl">ED-Tech Company</Link>
+                <Link to={'/'} className="btn btn-ghost normal-case text-xl text-primary">ED-Tech Company</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
             </div>
-            <div className='navbar-end'>
-                <label tabIndex="1" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
+            <div className="navbar-end">
+                <p className='text-primary italic font-bold lg:block hidden'>{user?.displayName}</p>
             </div>
         </div>
     );

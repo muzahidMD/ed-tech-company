@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './register.css'
 import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from '../../shared/Loading';
@@ -34,18 +33,18 @@ const Register = () => {
     }
 
     return (
-        <div className='container form'>
-            <h2 className='my-5 page-title'>Please Register</h2>
+        <div className='w-96 mx-auto form border p-10 rounded'>
+            <h2 className='text-center text-3xl text-primary font-bold italic my-10 '>Please Register</h2>
             <form onSubmit={handleRegister} className='w-50 mx-auto'>
                 <input type="text" name="name" id="" placeholder='Name' />
                 <input type="email" name="email" id="" placeholder='Email' required />
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onChange={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                <label className={`ms-3 ${agree ? 'text-success' : 'text-danger'}`} htmlFor="terms">Accept EG GROCERY Terms and Condition</label>
-                <input disabled={!agree} className='w-50 d-block mx-auto mt-3' style={{ backgroundColor: "#00896F", color: "#ffffff" }} type="submit" value="Register" />
+                <label className={`ml-3 ${agree ? 'text-success' : 'text-danger'} text-sm`} htmlFor="terms">Accept ED-Tech Terms and Condition</label>
+                <input disabled={!agree} className='font-semibold d-block mx-auto text-primary mt-3' type="submit" value="Register" />
             </form>
             <div className='text-center'>
-                <p>Already have an account ? <span style={{ color: "#00896F" }}><Link to="/login" style={{ color: "#00896F" }} className='text-decoration-none pe-auto'>Please Login</Link></span></p>
+                <p>Already have an account ? <span ><Link to="/login" className='text-decoration-none pe-auto text-primary'>Please Login</Link></span></p>
                 <SocialLogin />
             </div>
         </div>
